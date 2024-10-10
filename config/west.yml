@@ -1,11 +1,23 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/ftc/ # <--- CHANGE REPO
-  projects:
+      url-base: https://github.com/ftc/
     - name: zmk
+      url-base: https://github.com/zmkfirmware/
+
+  projects:
+    # FTC fork of ZMK for custom changes
+    - name: zmk-ftc
       remote: zmkfirmware
-      revision: mouse-ftc # <--- CHANGE REVISION
+      revision: mouse-ftc
       import: app/west.yml
+      path: zmk-ftc
+
+    # Official ZMK firmware repository
+    - name: zmk
+      remote: zmk
+      revision: main # Use `main` or another branch name if needed
+      path: zmk
+
   self:
     path: config
