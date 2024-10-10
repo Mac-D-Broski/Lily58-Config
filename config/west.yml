@@ -1,23 +1,14 @@
 manifest:
   remotes:
-    - name: zmk_official
+    - name: zmkfirmware
       url-base: https://github.com/zmkfirmware/
-    - name: zmk_fork
-      url-base: https://github.com/ftc/
 
   projects:
-    # FTC fork of ZMK (must be named zmk due to constraints)
     - name: zmk
-      remote: zmk_fork
-      revision: main # Use the correct branch name for your fork
-      path: zmk_fork # Store this in a separate folder (e.g., zmk_fork)
+      remote: zmkfirmware
+      revision: main # You can specify a different branch if needed
       import: app/west.yml
-
-    # Official ZMK repository (must be named zmk as well)
-    - name: zmk
-      remote: zmk_official
-      revision: main # Use the correct branch name for the official repo
-      path: zmk_official # Store this in a different folder (e.g., zmk_official)
+      path: zmk
 
   self:
     path: config
