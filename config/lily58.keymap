@@ -74,8 +74,8 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                       &trans            &trans          &trans        &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &mwh SCROLL_LEFT  &kp PAGE_DOWN   &kp PAGE_UP   &mwh SCROLL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &whl -1 0         &kp PG_DN       &kp PG_UP     &whl 1 0           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &mmv -10 0        &mmv 0 10        &mmv 0 -10   &mmv 10 0          &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans            &trans          &trans        &trans             &trans  &trans
                         &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK         &trans          &trans
             >;
