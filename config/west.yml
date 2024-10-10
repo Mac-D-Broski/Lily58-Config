@@ -7,11 +7,10 @@ manifest:
 
   projects:
     # FTC fork of ZMK for custom changes
-    - name: zmk-ftc
+    - name: zmk
       remote: zmkfirmware
       revision: mouse-ftc
       import: app/west.yml
-      path: zmk-ftc
 
     # Official ZMK firmware repository
     - name: zmk
