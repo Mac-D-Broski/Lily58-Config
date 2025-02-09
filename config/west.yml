@@ -3,9 +3,9 @@ manifest:
     - name: Mac-D-Broski
       url-base: https://github.com/Mac-D-Broski
   projects:
-    - name: zmk-config
+    - name: ZMK-Config
       remote: Mac-D-Broski
       revision: main
-      import: app/west.yml
+      import: west.yml
   self:
     path: config
