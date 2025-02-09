@@ -6,6 +6,6 @@ manifest:
     - name: ZMK-Config
       remote: Mac-D-Broski
       revision: main
-      import: west.yml
+      import: config/west.yml
   self:
     path: config
