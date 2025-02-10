@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: Mac-D-Broski
-      url-base: https://github.com/Mac-D-Broski
+    - name: urob
+      url-base: https://github.com/urob
   projects:
-    - name: ZMK-Config
-      remote: Mac-D-Broski
+    - name: zmk
+      remote: urob
       revision: main
-      import: config/west.yml
+      import: app/west.yml
   self:
     path: config
